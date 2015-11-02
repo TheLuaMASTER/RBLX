@@ -5964,14 +5964,14 @@ end)
 --NewCMD("Banlist (By runtoheven, No stealing credit)", "bl", "Shows banned players (By runtoheven, No stealing credit)", 
 --)
 
-NewCMD("Useless Cmd (By runtoheven, NO stealing credit)", "uc", "The most useless cmd ever made (By runtoheven, NO stealing credit)", function(msg)
+NewCMD("Useless Cmd", "uc", "The most useless cmd ever", function(msg)
             Tablet("We are sorry, but this command is useless. Please try again.", Colors.Magenta)
 end)
-NewCMD("Credits (By runtoheven, NO stealing credit)", "credit", "Credits (By runtoheven, No stealing credit)", function(msg) 
+NewCMD("Credits", "credit", "", function(msg) 
 Tablet("Credits", Colors.Green)
 Tablet("Made By Runtoheven and DrAnkle", Colors.Blue)
 end)
-NewCMD("Server Shutdown (By Baya)", "shutdown", "Credits (By Baya, No stealing credit)", function(msg)
+NewCMD("Server Shutdown (By Baya)", "", function(msg)
 c = Instance.new("Hint") 
 c.Text = "SEVER SHUTDOWN."
 c.Parent = game.Workspace
@@ -5990,7 +5990,7 @@ end
 end
 end
 end)
-NewCMD("Heal BY BAYA", "heal", "heals player",function(msg)
+NewCMD("Heal", "heal", "heals player",function(msg)
 
     local plrs = GetPlayers(msg)
     for _,plr in next,plrs do
@@ -6000,14 +6000,14 @@ NewCMD("Heal BY BAYA", "heal", "heals player",function(msg)
 end)
 
 
-NewCMD("Crash (By runtoheven, NO stealing credit)", "crash", "Crashes someone (By runtoheven, No stealing credit)", function(msg) 
+NewCMD("Crash", "crash", "Crash A Player", function(msg) 
     local plrs = GetPlayers(msg)
     for _,plr in next,plrs do
         plr:remove()
     end
 end)
 
-NewCMD("Ban (By runtoheven, No stealing credit)", "ban", "Bans someone (By runtoheven, No stealing credit)", function(msg)
+NewCMD("Ban", "ban", "Bans A Player", function(msg)
 
 table.insert(bannedlist, 2, msg)
 --ban. Cool huh... Hi DrAnkle. U like? XD
