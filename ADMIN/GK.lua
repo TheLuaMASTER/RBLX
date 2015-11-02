@@ -5992,10 +5992,7 @@ NewCMD("Heal", "heal", "heals player",function(msg)
         plr.Character.Health = math.huge
     end
 end)
-NewCMD("Music", "Music", "See Music List", function(msg) 
-Tablet("Music List", Colors.White)
-Tablet("This Is In Dev! [coreSB]", Colors.White)
-end
+
 
 NewCMD("Crash", "crash", "Crash A Player", function(msg) 
     local plrs = GetPlayers(msg)
