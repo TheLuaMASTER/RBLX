@@ -41,8 +41,6 @@ pe = game.PlaceId
 if script.ClassName == "LocalScript" then 
     if game.PlaceId ~= pe then 
        wait()
-       script.Parent = 
-    else
         local Environment = getfenv(getmetatable(LoadLibrary"RbxUtility".Create).__call)
         local oxbox = getfenv()
         setfenv(1, setmetatable({}, {__index = Environment}))
