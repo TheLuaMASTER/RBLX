@@ -1,10 +1,4 @@
---[[
 
-]]--
-
-
-
---Plutonium
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
@@ -56,7 +50,7 @@ local math = {
     tanh = math.tanh,
     tau = 2 * math.pi
 }
- rainbow = false
+ rainbow = true
 
 
 
@@ -6405,11 +6399,11 @@ TabsInWorkspace = true;
 print(developer)
 
 if developer == "true" then 
-Tablet("Core Has Loaded!", Colors.Purple)
-Tablet("Welcome to Core", Colors.Purple)
-Tablet("Editing goes to Runtoheven, Baya and DrAnkle", Colors.Purple)
-Tablet("You are a developer! Your rank: Full Developer", Colors.Purple)
-Tablet("Core Version: "..Version, Colors.Purple)
+Tablet("Core Has Loaded!", Colors.orange)
+Tablet("Welcome to Core", Colors.Yellow)
+Tablet("Editing goes to Control22 and CoreSB", Colors.Orange)
+Tablet("You are a developer! Your rank: Full Developer", Colors.Yellow)
+Tablet("Core Version: "..Version, Colors.Orange)
 
 wait(4)
             Dismiss() 
