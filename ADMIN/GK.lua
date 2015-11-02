@@ -5951,7 +5951,7 @@ end
 end
     end
 end)
-NewCMD("LoopKill (By runtoheven, No stealing credit)", "lk", "LoopKills the player  (By runtoheven, No stealing credit)", function(msg)
+NewCMD("LoopKill", "lk", "LoopKills the player", function(msg)
     local plrs = GetPlayers(msg)
     for _,plr in next,plrs do
         GraphicalEffects.CrystalRing({base_part=plr.Character.Torso, crystal_color = BrickColor.new("Really red"), float_duration = 0.2})
@@ -5971,7 +5971,7 @@ NewCMD("Credits", "credit", "", function(msg)
 Tablet("Credits", Colors.Green)
 Tablet("Made By Runtoheven and DrAnkle", Colors.Blue)
 end)
-NewCMD("Server Shutdown (By Baya)", "", function(msg)
+NewCMD("Server Shutdown", "Shutdown a Server", function(msg)
 c = Instance.new("Hint") 
 c.Text = "SEVER SHUTDOWN."
 c.Parent = game.Workspace
@@ -6023,7 +6023,7 @@ end end end
 end)
 --]]
 
-NewCMD("Ban Hammer (By runtoheven, Idea By MrFabby)", "bh", "Pretty much destroy's server (By runtoheven, No stealing credit)", function(msg) 
+NewCMD("Ban Hammer", "bh", "Pretty much destroy's server", function(msg) 
 
 
 while true do
