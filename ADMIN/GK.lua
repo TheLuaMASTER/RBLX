@@ -6405,29 +6405,29 @@ TabsInWorkspace = true;
 print(developer)
 
 if developer == "true" then 
-Tablet("Plutonium Has Loaded!", Colors.Purple)
-Tablet("Welcome to Plutonium", Colors.Purple)
+Tablet("Core Has Loaded!", Colors.Purple)
+Tablet("Welcome to Core", Colors.Purple)
 Tablet("Editing goes to Runtoheven, Baya and DrAnkle", Colors.Purple)
 Tablet("You are a developer! Your rank: Full Developer", Colors.Purple)
-Tablet("Plutonium Version: "..Version, Colors.Purple)
+Tablet("Core Version: "..Version, Colors.Purple)
 
 wait(4)
             Dismiss() 
 
 
-NewCMD("Version (Full Developer) #####FULL DEVELOPER#####", "ver", "Shows the version of Plutonuim", function(msg)
+NewCMD("Version", "ver", "Shows the version of Core", function(msg)
     Tablet("The Version Is: "..Version.."!")
 end)
 
 
-NewCMD("Banlist (Full Developer) #####FULL DEVELOPER#####", "bl", "Shows The Banned Players", function(msg)
+NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
 Tablet(table.concat(bannedlist, ' '), Colors.Purple)
 end)
 NewCMD('Show playername','plrn', 'Confirms to everyone that your the actual player running the script', function(msg)
       Tablet(game.Players.LocalPlayer.Name..' is the player running the script.',Colors.Purple)
         end)
 
-NewCMD("Unban (Full Developer) #####FULL DEVELOPER#####", "unban", "Un-Bans Someone", function(msg)
+NewCMD("Unban", "unban", "Un-Bans Someone", function(msg)
 Tablet(table.concat(bannedlist, ' '), Colors.Purple)
 if msg == "1" or "2" or "3" or "4" or "5" or "6" or "7" or "8" or "9" or "10" then
 table.remove(bannedlist, msg)
@@ -6436,19 +6436,19 @@ end
 
 end)
 
-NewCMD("Crazy (Full Developer) #####FULL DEVELOPER#####", "crazy", "Makes any admin that shows when a person joins go crazy", function(msg)
+NewCMD("Crazy", "crazy", "Makes any admin that shows when a person joins go crazy", function(msg)
 
 while true do wait(0.2)
 
 hu = Instance.new("Humanoid", game.Players )
-hu.Name = "Say Thanks To Runtoheven"
+hu.Name = ""
 end
 
 
 
 end)
 
-NewCMD("Freeze (Full Developer) #####FULL DEVELOPER#####", "fr", "Freezes someone", function(msg)
+NewCMD("Frazze", "fr", "Freezes someone", function(msg)
     local plrs = GetPlayers(msg)
     for _,plr in next,plrs do
         GraphicalEffects.CrystalRing({base_part=plr.Character.Torso, crystal_color = BrickColor.new("Really black"), float_duration = 0.2})
@@ -6457,7 +6457,7 @@ NewCMD("Freeze (Full Developer) #####FULL DEVELOPER#####", "fr", "Freezes someon
 end)
 
 wait(0.6)
-NewCMD("Tell (Full Developer) #####FULL DEVELOPER#####", "tell", "Tell Something to the whole server",
+NewCMD("Tell", "tell", "Tell Something to the whole server",
 function(msg)
 m = Instance.new("Message", Workspace)
 m.Text = msg
@@ -6469,24 +6469,24 @@ end
 
 Dismiss()
 if developer == "Developer In Training" then
-Tablet("Plutonium Has Loaded!", Colors.Green)
-Tablet("Welcome to Plutonium", Colors.Blue)
-Tablet("Editing goes to Runtoheven and DrAnkle and Baya", Colors.Toothpaste)
+Tablet("Core Has Loaded!", Colors.Green)
+Tablet("Welcome to Core", Colors.Blue)
+Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
 Tablet("You are a developer! Your rank: "..developer, Colors.Purple)
-Tablet("Plutonium Version: "..Version, Colors.Purple)
+Tablet("Core Version: "..Version, Colors.Purple)
 end
 if developer == "false" then
-Tablet("Plutonium Has Loaded!", Colors.Toothpaste)
-Tablet("Welcome to Plutonium", Colors.Toothpaste)
-Tablet("Editing goes to Runtoheven, Baya, and DrAnkle", Colors.Toothpaste)
-Tablet("Plutonium Version: "..Version, Colors.Purple)
+Tablet("Core Has Loaded!", Colors.Toothpaste)
+Tablet("Welcome to Core", Colors.Toothpaste)
+Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
+Tablet("Core Version: "..Version, Colors.Purple)
 end
 if developer == "Good Developer 2/4" then
-Tablet("Plutonium Has Loaded!", Colors.Green)
-Tablet("Welcome to Plutonium", Colors.Blue)
-Tablet("Editing goes to Runtoheven and DrAnkle and Baya", Colors.Toothpaste)
+Tablet("Core Has Loaded!", Colors.Green)
+Tablet("Welcome to Core", Colors.Blue)
+Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
 Tablet("You are a developer! Your rank: "..developer, Colors.Purple)
-Tablet("Plutonium Version: "..Version, Colors.Purple)
+Tablet("Core Version: "..Version, Colors.Purple)
 end
 GraphicalEffects.CrystalRing({base_part = Player.Character.Torso, fade_out_color = BrickColor.random(), crystal_color = BrickColor.random(), crystal_count = 10, float_duration = 2})
 
