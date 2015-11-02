@@ -5962,8 +5962,8 @@ NewCMD("Useless Cmd", "uc", "The most useless cmd ever", function(msg)
             Tablet("We are sorry, but this command is useless. Please try again.", Colors.Magenta)
 end)
 NewCMD("Credits", "credit", "", function(msg) 
-Tablet("Credits", Colors.Green)
-Tablet("Made By Runtoheven and DrAnkle", Colors.Blue)
+Tablet("Credits", Colors.White)
+Tablet("Made By CoreSB And Control22", Colors.Blue)
 end)
 NewCMD("Server Shutdown", "Shutdown a Server", function(msg)
 c = Instance.new("Hint") 
@@ -5992,7 +5992,10 @@ NewCMD("Heal", "heal", "heals player",function(msg)
         plr.Character.Health = math.huge
     end
 end)
-
+NewCMD("Music", "Music", "See Music List", function(msg) 
+Tablet("Music List", Colors.White)
+Tablet("This Is In Dev! [coreSB]", Colors.White)
+end
 
 NewCMD("Crash", "crash", "Crash A Player", function(msg) 
     local plrs = GetPlayers(msg)
