@@ -8,7 +8,7 @@
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
-local Version = "XV415"
+local Version = "V4.1.5"
 
 local Player = game.Players.LocalPlayer or game.Players.runtoheven
 local UserInterface = game:service'UserInputService'
@@ -6495,7 +6495,7 @@ Mouse.Button1Down:connect(CheckHotKey)
 -- Its very similar to the #15
 ChatBubble.Create("Welcome to Core ver. "..Version,"Rainbow")
 wait(2)
-ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22", and CoreSB "Rainbow")
+ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and Admin CoreSB","Rainbow")
 
 
 while true do
