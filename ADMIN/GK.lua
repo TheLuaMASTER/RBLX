@@ -4,7 +4,7 @@ local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
 local Version = "V4.1.5"
 
-local Player = game.Players.LocalPlayer or game.Players.runtoheven
+local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
 local RF = game.ReplicatedStorage:findFirstChild("GKAttachment") or nil
 local bannedlist = {"DontNukeMe","WhiteCodeLua"};
