@@ -6415,7 +6415,7 @@ end)
 
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
-Tablet(table.concat(bannedlist, ' '), Colors.Purple)
+Tablet(table.concat(bannedlist, ' '), Colors.red)
 end)
 NewCMD('Show playername','plrn', 'Confirms to everyone that your the actual player running the script', function(msg)
       Tablet(game.Players.LocalPlayer.Name..' is the player running the script.',Colors.Purple)
