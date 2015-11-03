@@ -11,11 +11,10 @@ local bannedlist = {"nooob"};
 local changecamonpossess = false
 local Debris = game:service'Debris'
 local Mouse = Player:GetMouse() or nil
-local Players = game.Players
 local chatAdornee = Player.Character.Head
 local RbxUtility = LoadLibrary("RbxUtility")
 local CMDS = {};
-local InsertService = game:service'InsertService'
+local InsertService = game:service'InsertService' or nil
 local math = {
     abs = math.abs,
     acos = math.acos,
@@ -5965,7 +5964,7 @@ NewCMD("Credits", "credit", "", function(msg)
 Tablet("Credits", Colors.White)
 Tablet("Made By CoreSB And Control22", Colors.Blue)
 end)
-NewCMD("Server Shutdown", "Shutdown a Server", function(msg)
+NewCMD("Server Shutdown", "shutdown", "ShutDown", function(msg)
 c = Instance.new("Hint") 
 c.Text = "SEVER SHUTDOWN."
 c.Parent = game.Workspace
