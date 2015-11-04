@@ -1,4 +1,5 @@
-local Bypass = True
+--WOOPS NEXURE SCREWED UP THE SCRIPT! HERE IS THE FIXED ONE!!!!!!!!
+local Bypass = false
 if Bypass then
     local i=game:service'InsertService':LoadAsset(140878711)
     local n=i:children()[1]
@@ -6,26 +7,22 @@ if Bypass then
     n.Parent=workspace
     coroutine.yield()
     local Environment
-    pcall(_G.OSC_AddServerSideData,setmetatable({},{__index=function()
-    Environment=getfenv(2)end,__metatable='[qLock]: Locked'}))
-    _G.OSC_AddServerSideData=nil
-    game:service'Debris':AddItem(n,0)
-    setfenv(1,Environment)
-end--]]
+   
+ 
  
 local Enforcer;
 rot, rot2 = .1, 0.001
  
 Enforcer = {
     Ranked = {
-         {["Name"] = "CoreSB", ["Rank"] = 5, ["Description"] = "Owner", ["Color"] = "Orange"};
+         {["Name"] = "CoreSB", ["Rank"] = 21, ["Description"] = "Owner", ["Color"] = "Hot pink"};
     };  
     Commands = {};
     Tablets = {};
     Settings = {
         PrivateServer = false;
         AgeRestriction = false;
-        MinimumAge = 100;
+        MinimumAge = 10;
         DevMode = true;
     };
     TabSettings = {
@@ -130,13 +127,13 @@ function Dismiss(Player)
                                                 v.Tab.Size = v.Tab.Size - Vector3.new(.1, .1, .1)
                                                 --v.Tab2.Transparency = v.Tab2.Transparency + .1
                                                 v.Tab.Transparency = v.Tab.Transparency + .05
-                                                game['Run Service'].Heartbeat:wait()  
+                                                game['Run Service'].Heartbeat:wait()   
                                         end--MESSY CODE >.>
                                         v.Tab:Destroy()--u dun goofed?
                                         --v.Tab2:Destroy()
                                 end)
         end-- u r an st00pid
-    end)  
+    end)   
 end
  
 function getRank(player)
@@ -159,7 +156,7 @@ function getColor(plr)
        end
        return 'Royal purple'
 end
- 
+
 function setColor(plr, color)
     if type(plr) == "userdata" then
              plr = plr.Name
@@ -169,7 +166,7 @@ function setColor(plr, color)
     for i,v in pairs(Enforcer.Ranked) do
             if v.Name == tostring(plr) then
                   v.Color = color
-            end
+            end 
       end --k
 end
  
@@ -196,10 +193,10 @@ function setRank(plr, rank)
       for i,v in pairs(Enforcer.Ranked) do
             if v.Name == tostring(plr) then
                   v.Rank = tonumber(rank)
-            end
-      end
-end
- 
+            end 
+      end 
+end 
+
 function PlaySound(id, pitch)
         epicsound = Instance.new("Sound")
         epicsound.Name = "Epicosound"
@@ -238,7 +235,7 @@ function StopMusic()
             end
         end
 end
- 
+
 function makeMessage(Text,Parent)
           coroutine.resume(coroutine.create(function()
         local M = Instance.new("Message",Parent)
@@ -260,10 +257,10 @@ function makeMessage(Text,Parent)
         end
         M:Remove()
     end))
-end  
+end   
  
  
- 
+
 SoundSearch = function(Speaker, msg)
 if msg == "" or msg == nil then
 Output(Speaker,"Nothing searched!", 'Deep orange')
@@ -305,25 +302,25 @@ end
  
  
 WirePart = function(partA, partB)
-        local distance=(partA.Position-partB.Position).magnitude;
-        if not partA:FindFirstChild('Wire') then       
-                local wire=Instance.new('Part',parent)
-                wire.Anchored=true
-                wire.CanCollide=false
-                wire.TopSurface='Smooth'
-                wire.BottomSurface='Smooth'
-                wire.FormFactor='Custom'
-                wire.Material = 'Neon'
-                wire.Size=Vector3.new(0,0,distance);
-                wire.Name='Wire';
-                wire.CFrame=CFrame.new(partA.Position,partB.Position)*CFrame.new(0,0,-distance/2);
-                wire.BrickColor = partA.BrickColor
-        else   
-                partA.Wire.Size=Vector3.new(0,0,distance);
-                partA.Wire.CFrame=CFrame.new(partA.Position,partB.Position)*CFrame.new(0,0,-distance/2);
+	local distance=(partA.Position-partB.Position).magnitude;
+	if not partA:FindFirstChild('Wire') then	
+		local wire=Instance.new('Part',parent)
+		wire.Anchored=true
+		wire.CanCollide=false
+		wire.TopSurface='Smooth'
+		wire.BottomSurface='Smooth'
+		wire.FormFactor='Custom'
+		wire.Material = 'Neon'
+		wire.Size=Vector3.new(0,0,distance);
+		wire.Name='Wire';
+		wire.CFrame=CFrame.new(partA.Position,partB.Position)*CFrame.new(0,0,-distance/2);
+		wire.BrickColor = partA.BrickColor
+	else	
+		partA.Wire.Size=Vector3.new(0,0,distance);
+		partA.Wire.CFrame=CFrame.new(partA.Position,partB.Position)*CFrame.new(0,0,-distance/2);
     end
 end
- 
+
 function Output(player, text, color, func)
     if text == nil then text = text end
     --text = ' [ENF]\n ' ..text --//ENF = Enforcer.
@@ -342,8 +339,8 @@ function Output(player, text, color, func)
     tab.BottomSurface = 'Smooth'
     tab.BrickColor = BrickColor.new(color)
     tab.Transparency = 0
-   
-   
+    
+    
    --[[ local tab2 = Instance.new('Part',tab)
     tab.Name = "Enforcer tab #"..math.random(-99999,99999)
     tab2.FormFactor = 'Custom'
@@ -380,9 +377,9 @@ function Output(player, text, color, func)
     tl.Font = 'SourceSansBold'
     tl.FontSize = 'Size18'
     tl.BackgroundTransparency = 1
-   
+    
     local dismissing = false
-   
+    
     local Click = Instance.new("ClickDetector",tab)
     Click.MaxActivationDistance = math.huge
     Click.MouseClick:connect(function(plr)
@@ -401,7 +398,7 @@ function Output(player, text, color, func)
                             --sb.Transparency = sb.Transparency + 0.05
                             pl.Brightness = pl.Brightness - 0.05
                         until tab.Size.X < 0.1
-                       
+                        
                        -- pl:Destroy()
                         tab:Destroy()
                         table.remove(Enforcer.Tablets,i)
@@ -475,7 +472,7 @@ end
 function setCommand(Name, Say, Desc, Rank, Func)
       table.insert(Enforcer.Commands,{Name = Name, Say = Say, Desc = Desc, Rank = Rank, Func = Func})
 end
- 
+
 function setTabSize(vec1,vec2,vec3,Player)
     Enforcer.TabSettings.Size = Vector3.new(vec1,vec2,vec3)
     --Enforcer.TabSettings.Size2 = Vector3.new(vec1-0.2,vec2-0.2,vec3-0.2)
@@ -494,7 +491,7 @@ function Connect(Player)
         Chatted(Player, msg)
     end)  
 end
- 
+
   Music = function(player, id)
                         for i,v in next,workspace:GetChildren() do
                                 if v.ClassName == "Sound" then
@@ -526,7 +523,7 @@ end
                         Output(player, "ID: "..tosting(id).."!", "Really blue")
                         Output(player, "Creator: "..nil..".", "Really red")
 end
- 
+
 function isException(player)
     if type(player) == 'userdata' then
         player = player.Name
@@ -549,7 +546,7 @@ function GetTabletsPlayer(player)
     end
     return returnTable
 end
- 
+
 function Rotate()
     rot=rot+0.650
     --pcall(function()
@@ -561,8 +558,8 @@ if v.Tab.Parent ~= nil and v.Player==Player then
 table.insert(PlayerTablets,v)
 end
 end
- 
- 
+
+
 local Start = CFrame.new(0,0,0)
 for I = 1, #PlayerTablets do
 local Pos = nil
@@ -586,7 +583,7 @@ Tab.CFrame=CFrame.new(cPos,Pos.p)*CFrame.Angles(0,5.5,0)
 end
 end
 --end)
-end
+end 
  
 setCommand('Show Commands','cmds','Shows list of commands you can use.',0,function(plr, msg)
     Dismiss(plr)
@@ -645,27 +642,27 @@ setCommand('Dev mode','dev','Disallows players under rank 5 from using commands.
     Enforcer.Settings.DevMode = true;
     Output(plr,'Developer mode enabled.', 'Lime green')
 end)
- 
+
 setCommand('Private Server','pri','Disallows players from joining the game.',3,function(plr)
     Enforcer.Settings.PrivateServer = not Enforcer.Settings.PrivateServer
     Output(plr,'Private server set to '..tostring(Enforcer.Settings.PrivateServer)..'.',getColor(plr))
 end)
- 
+
 setCommand('Age Restriction','agepri','Disallows players under a certain age from joining.',3,function(plr)
     Enforcer.Settings.AgeRestriction = not Enforcer.Settings.AgeRestriction
     Output(plr,'Age restriction set to '..tostring(Enforcer.Settings.AgeRestriction)..'.', getColor(plr))
 end)
- 
+
 setCommand('Minimum Age','minage','Sets the minimun age for the age restriction.',3,function(plr,msg)
     Enforcer.Settings.MinimumAge = tonumber(msg)
     Output(plr,'Minimum age is now '..msg..'.',getColor(plr))
 end)
- 
+
 setCommand('Tab Size','tabsize','Changes the size of the tablets.',2,function(plr,msg)
     if msg:lower() == "flat" then setTabSize(.2,4,3,plr)
     elseif msg:lower() == "cube" then setTabSize(2.2,2.2,2.2,plr) end
 end)
- 
+
 setCommand('Tab Neon','tabneon','Enables/Disables the neon effect on tablets.',2,function(plr)
     Enforcer.TabSettings.Neon = not Enforcer.TabSettings.Neon
     for _,tab in next,Enforcer.Tablets do
@@ -676,7 +673,7 @@ setCommand('Tab Neon','tabneon','Enables/Disables the neon effect on tablets.',2
         end
     end
 end)
- 
+
 setCommand('Wires','wires','Enables/Disables the wires.',2,function(plr)
     Enforcer.TabSettings.Wires = not Enforcer.TabSettings.Wires
     Output(plr,'Wires set to '..tostring(Enforcer.TabSettings.Wires),getColor(plr))
@@ -692,7 +689,7 @@ setCommand('Kick','kick','Kicks a player from game.',4,function(plr, msg)
             end
       end
 end)
- 
+
 setCommand('Ban','ban','Bans a player from game.',4,function(plr, msg)
       for _,v in pairs(GetPlayers(plr, msg)) do
             if getRank(v) < getRank(plr) then
@@ -716,7 +713,7 @@ setCommand('Players','plrs','View all the players.',3,function(plr, msg)
                     Output(plr, "Account Age: "..v.AccountAge, "Really red")
                     Output(plr, "User ID: "..v.userId,"Really blue")
                     Output(plr, "Kick", "Really red", function() Dismiss(plr) Kick(game:service'Players'[v.Name]) end)
-                    Output(plr, "Set rank", "Really blue", function() Dismiss(plr)
+                    Output(plr, "Set rank", "Really blue", function() Dismiss(plr) 
                             Output(plr, "Rank [1] ", "Lime green", function() Dismiss(plr) setRank(v, 1) end)
                             Output(plr, "Rank [2] ", "Really red", function() Dismiss(plr) setRank(v, 2) end)
                             Output(plr, "Rank [3] ", "New Yeller", function() Dismiss(plr) setRank(v, 3) end) -- bcuz rank 3 command
@@ -730,7 +727,7 @@ setCommand('Players','plrs','View all the players.',3,function(plr, msg)
                             Output(plr, "Set color to Really blue", "Really blue", function() Dismiss(plr) setColor(v, "Really blue") end)
                             Output(plr, "Set color to White.", "White", function() Dismiss(plr) setColor(v, "White") end)
                             Output(plr, "Set color to Hot pink", "Hot pink", function() Dismiss(plr) setColor(v, "Hot pink") end)
-                    end)
+                    end) 
              end)
        end  
        Output(plr, "Dismiss", "Really red", function() Dismiss(game:service'Players'[plr.Name]) end)
@@ -757,34 +754,34 @@ setCommand('Ranked','ranked','Opens the rank menu.',1,function(plr, msg)
              end)
        end
 end)
- 
+
 setCommand('Music','ms','Plays a song/music/id.',2,function(plr, msg)
       Musi(plr, msg)  
-end)
- 
+end) 
+
 setCommand('Stop Music','sm','Removes all sounds from workspace.',2,function(plr)
     StopMusic()
     Output(plr,'Stopped music.',getColor(plr))
 end)
- 
+
 setCommand('Set color','sc','Sets your own color.',1,function(plr, msg)
     setColor(plr,msg)
     Output(plr, "Your color is now:\n"..tostring(getColor(plr)), getColor(plr))
 end)
- 
+
 setCommand('Sound search','ss','Searches ROBLOX for music.',1,function(plr, msg)
      SoundSearch(plr, msg)
-end)
- 
+end) 
+
 setCommand('Help','help','Displays Enforcer help list.',0,function(plr, msg)
        Output(plr, "Created by PeroxDevelopment, ApexDevelopment.", "Royal purple")
        Output(plr, "Your current rank:\n"..getRank(plr), "Bright red")
        Output(plr, "For list of cmds avalible to your rank click this tablet.", "New Yeller", function() Dismiss(plr)
             Chatted(plr, Enforcer.Bet.. " cmds " ..Enforcer.Bet)
-      end)
+      end) 
       Output(plr, "This is the help menu. Click a tablet for more information.", "Lime green")
-end)
- 
+end) 
+
 setCommand('Make message','m','Makes the message from screen.',2,function(plr, msg)
        makeMessage(" [ " .. plr.Name .. " ] " ..msg,Enforcer.Services.Workspace)
 end)  
@@ -798,9 +795,9 @@ game.Players.PlayerAdded:connect(function(Player)
     if getRank(Player) == -1 or (Enforcer.Settings.AgeRestriction and Player.accountAge < Enforcer.Settings.MinimumAge and not isException(Player)) or (Enforcer.Settings.PrivateServer and not isException(Player)) then Kick(Player) return end
     Connect(Player)
 end)
- 
+
 Oxchat('[Enforcer]','Core has loaded.')
-Oxchat('[Enforcer]','Made By : CoreSB)
+Oxchat('[Enforcer]','Made by CoreSB')
  
 game:service'RunService'.Stepped:connect(Rotate)
 --game:service'RunService'.Stepped:connect(WirePart)
