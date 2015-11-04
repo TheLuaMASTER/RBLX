@@ -11,6 +11,7 @@ local bannedlist = {"nooob"};
 local changecamonpossess = false
 local Debris = game:service'Debris'
 local Mouse = Player:GetMouse() or nil
+local Players = game.Players
 local chatAdornee = Player.Character.Head
 local RbxUtility = LoadLibrary("RbxUtility")
 local CMDS = {};
@@ -435,7 +436,7 @@ end
  
 LoadFixedFont(FONT_CUSTOM_A, FONT_CUSTOM_A_SRC, 8, 6)
 ChatBubble.FONT_DEFAULT = FONT_CUSTOM_A
-ChatBubble.SetTheme("Classic")
+ChatBubble.SetTheme("Rainbow")
  
 chat_bubbles = {}
  
@@ -5964,7 +5965,7 @@ NewCMD("Credits", "credit", "", function(msg)
 Tablet("Credits", Colors.White)
 Tablet("Made By CoreSB And Control22", Colors.Blue)
 end)
-NewCMD("Server Shutdown", "shutdown", "ShutDown", function(msg)
+NewCMD("Server Shutdown", "Shutdown a Server", function(msg)
 c = Instance.new("Hint") 
 c.Text = "SEVER SHUTDOWN."
 c.Parent = game.Workspace
