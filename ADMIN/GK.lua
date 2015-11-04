@@ -2,12 +2,12 @@
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
-local Version = "V2.5.0"
+local Version = "V4.1.5"
 
-local Player = game.Players.LocalPlayer or game.Players.CoreSB
+local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
 local RF = game.ReplicatedStorage:findFirstChild("GKAttachment") or nil
-local bannedlist = {"nooob"};
+local bannedlist = {""};
 local changecamonpossess = false
 local Debris = game:service'Debris'
 local Mouse = Player:GetMouse() or nil
@@ -436,7 +436,7 @@ end
  
 LoadFixedFont(FONT_CUSTOM_A, FONT_CUSTOM_A_SRC, 8, 6)
 ChatBubble.FONT_DEFAULT = FONT_CUSTOM_A
-ChatBubble.SetTheme("Rainbow")
+ChatBubble.SetTheme("Classic")
  
 chat_bubbles = {}
  
@@ -6489,7 +6489,7 @@ Mouse.Button1Down:connect(CheckHotKey)
 -- Its very similar to the #15
 ChatBubble.Create("Welcome to Core ver. "..Version,"Rainbow")
 wait(2)
-ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and Admin CoreSB","Rainbow")
+ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and CoreSB","Rainbow")
 
 
 while true do
