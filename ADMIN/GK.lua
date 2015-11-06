@@ -452,7 +452,7 @@ function CreateChatBubble(bubble_info)
                 bubble_info[7] = label
                 billboard.Parent = Workspace
         else
-                label = DrawMultilineTextNetwork('[CoreSB] \n'..text, bubble_info[9], UDim2.new(0, 12, 0, 16), creation_time - time(), "Center")
+                label = DrawMultilineTextNetwork('[Gatekeeper] \n'..text, bubble_info[9], UDim2.new(0, 12, 0, 16), creation_time - time(), "Center")
                 label.Name = "Label"
                 label.Position = UDim2.new(0, 16, 0, 16)
                 billboard = Instance.new("BillboardGui", Workspace)
@@ -6466,21 +6466,21 @@ end
 
 Dismiss()
 if developer == "Developer In Training" then
-Tablet("Core Has Loaded!", Colors.Green)
-Tablet("Welcome to Core", Colors.Blue)
+Tablet("Gatekeeper Has Loaded!", Colors.Green)
+Tablet("Welcome to Gatekeeper", Colors.Blue)
 Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
 Tablet("You are a developer! Your rank: "..developer, Colors.Purple)
-Tablet("Core Version: "..Version, Colors.Purple)
+Tablet("Gatekeeper Version: "..Version, Colors.Purple)
 end
 if developer == "false" then
-Tablet("Core Has Loaded!", Colors.Toothpaste)
-Tablet("Welcome to Core", Colors.Toothpaste)
+Tablet("Gatekeeper Has Loaded!", Colors.Toothpaste)
+Tablet("Welcome to Gatekeeper", Colors.Toothpaste)
 Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
-Tablet("Core Version: "..Version, Colors.Purple)
+Tablet("Gatekeeper Version: "..Version, Colors.Purple)
 end
 if developer == "Good Developer 2/4" then
-Tablet("Core Has Loaded!", Colors.Green)
-Tablet("Welcome to Core", Colors.Blue)
+Tablet("CoGatekeeper Has Loaded!", Colors.Green)
+Tablet("Welcome to Gatekeeper", Colors.Blue)
 Tablet("Editing goes to Control22 CoreSB", Colors.Toothpaste)
 Tablet("You are a developer! Your rank: "..developer, Colors.Purple)
 Tablet("Core Version: "..Version, Colors.Purple)
@@ -6490,7 +6490,7 @@ GraphicalEffects.CrystalRing({base_part = Player.Character.Torso, fade_out_color
 Player.Chatted:connect(function(msg) if string.sub(msg,1,1) == "/" then onChatted(msg) else ChatBubble.Create(msg) end end)
 Mouse.Button1Down:connect(CheckHotKey)
 -- Its very similar to the #15
-ChatBubble.Create("Welcome to Core ver. "..Version,"Rainbow")
+ChatBubble.Create("Welcome to Gatekeeper ver. "..Version,"Rainbow")
 wait(2)
 ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and CoreSB","Rainbow")
 
