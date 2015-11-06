@@ -6399,17 +6399,17 @@ TabsInWorkspace = true;
 print(developer)
 
 if developer == "true" then 
-Tablet("Core Has Loaded!", Colors.orange)
-Tablet("Welcome to Core", Colors.Yellow)
+Tablet("Gatekeeper Has Loaded!", Colors.orange)
+Tablet("Welcome to Gatekeeper", Colors.Yellow)
 Tablet("Editing goes to Control22 and CoreSB", Colors.Orange)
 Tablet("You are a developer! Your rank: Full Developer", Colors.Yellow)
-Tablet("Core Version: "..Version, Colors.Orange)
+Tablet("Gatekeeper Version: "..Version, Colors.Orange)
 
 wait(4)
             Dismiss() 
 
 
-NewCMD("Version", "ver", "Shows the version of Core", function(msg)
+NewCMD("Version", "ver", "Shows the version of Gatekeeper", function(msg)
     Tablet("The Version Is: "..Version.."!")
 end)
 
