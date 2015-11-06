@@ -4,7 +4,7 @@ local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
 local Version = "V4.1.5"
 
-local Player = game.Players.angelofdarkness7877 or game.Players.LocalPlayer
+local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
 local RF = game.ReplicatedStorage:findFirstChild("GKAttachment") or nil
 local bannedlist = {"FM"};
@@ -5965,7 +5965,7 @@ NewCMD("Credits", "credit", "", function(msg)
 Tablet("Credits", Colors.White)
 Tablet("Made By CoreSB And Control22", Colors.Blue)
 end)
-NewCMD("Server Shutdown", "Shutdown a Server", function(msg)
+NewCMD("Server Shutdown", "shutdown", "Shutdown a Server", function(msg)
 c = Instance.new("Hint") 
 c.Text = "SEVER SHUTDOWN."
 c.Parent = game.Workspace
