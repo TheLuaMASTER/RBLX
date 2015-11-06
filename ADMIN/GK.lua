@@ -6413,6 +6413,9 @@ NewCMD("Version", "ver", "Shows the version of Core", function(msg)
     Tablet("The Version Is: "..Version.."!")
 end)
 
+NewCMD("Music", "ms", "Search A Music", function(msg)
+    Tablet("The Version Is: "..Version.."!")
+end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
 Tablet(table.concat(bannedlist, ' '), Colors.red)
