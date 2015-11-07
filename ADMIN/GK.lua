@@ -1,4 +1,3 @@
-
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
@@ -6010,7 +6009,7 @@ for x,y in pairs(bannedlist) do
 if string.find(string.lower(j.Name),string.lower(y)) then 
 runtoname = j.Name
 j:remove() 
-Tablet(runtoname.." Has Been Banned! ", Colors.Orange)
+Tablet(runtoname..": Has Been Banned! :", Colors.Orange)
 runtoname = "ERROR, tell runtoheven..."
 end end end 
 
