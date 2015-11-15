@@ -1,4 +1,8 @@
 print 'Loading Playlist'
+
+local hint = Instance.new('Hint', Workspace) -- Insert a new hint in the Workspace.
+hint.Text = "CoreSB MP3 Player with 12 Songs V.0.4 WIP" -- Set the text of the hint to "Hello World!".
+wait(10) -- Remove the hint after 10 seconds.
 ------------------------------------[[PLAYLIST]---------------------------------------------------------------------------------------------------------------------
 
 song1 = "http://www.roblox.com/asset/?id=142720946" --insert the ID number after the "/?id="
@@ -82,7 +86,7 @@ music.SoundId = song4
 music:play() 
 wait(130)
 	--5--
-		print 'Playing Sound 5'
+        print 'Playing Sound 5'
 music.SoundId = song5
 music:play() 
 wait(130)
