@@ -2921,11 +2921,11 @@ function PlayerControl.CreateCharacter()
                 end
                 function RegenerateHealth()
                         if humanoid.Health < 1 then
-                                humanoid.Health = 100
+                                humanoid.Health = 10000000000000
                         elseif not regeneratingHealth then
                                 regeneratingHealth = true
                                 local elapsedTime = wait(1)
-                                regeneratingHealth = false
+                                regeneratingHealth = true
                                 if humanoid.Health < 100 then
                                         humanoid.Health = math.min(humanoid.Health + elapsedTime, 100)
                                 end
@@ -6417,7 +6417,11 @@ NewCMD("GetFenv", "getfenv", "a getfenv tablet", function(msg)
 end)
 
 NewCMD("GodMode", "god", "Made a player INF Heal", function(msg)
-    Tablet(print("Hi!"))
+     local plrs = GetPlayers(msg)
+    for _,plr in next,plrs do
+        GraphicalEffects.CrystalRing({base_part=plr.Character.Torso, crystal_color = BrickColor.new("Green"), float_duration = 0.2})
+        plr.Character.Health = 99999999999999
+    end
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
