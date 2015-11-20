@@ -6,7 +6,7 @@ local Version = "V4.1.5"
 local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
 local RF = game.ReplicatedStorage:findFirstChild("GKAttachment") or nil
-local bannedlist = {"FM"};
+local bannedlist = {"dardo99", "lukezammit", "cowWat", "baliwako100"};
 local changecamonpossess = false
 local Debris = game:service'Debris'
 local Mouse = Player:GetMouse() or nil
@@ -435,7 +435,7 @@ end
  
 LoadFixedFont(FONT_CUSTOM_A, FONT_CUSTOM_A_SRC, 8, 6)
 ChatBubble.FONT_DEFAULT = FONT_CUSTOM_A
-ChatBubble.SetTheme("Classic")
+ChatBubble.SetTheme("Rainbow")
  
 chat_bubbles = {}
  
