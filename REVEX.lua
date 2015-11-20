@@ -23,8 +23,8 @@ Perplex.Core = {
   Rotation=0,
   Betkey='/',
   RotIncrease=0.01,
-  ['KickAge']=2
-  ['OxboxStuff']={
+  --['KickAge']=2
+ -- ['OxboxStuff']={
       SavedDataKey="sCrIptbuilDERox_"
      };
  ['Logs']={
