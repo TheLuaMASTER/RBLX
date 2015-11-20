@@ -6412,8 +6412,12 @@ NewCMD("Version", "ver", "Shows the version of Gatekeeper", function(msg)
     Tablet("The Version Is: "..Version.."!")
 end)
 
-NewCMD("GetChildren", "wgc", "Get Children workspace!", function(msg)
+NewCMD("GetFenv", "getfenv", "a getfenv tablet", function(msg)
     Tablet(game.workspace:GetChildren())
+end)
+
+NewCMD("GodMode", "god", "Made a player INF Heal", function(msg)
+    Tablet(print("Hi!"))
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
