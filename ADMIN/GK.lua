@@ -6412,8 +6412,8 @@ NewCMD("Version", "ver", "Shows the version of Gatekeeper", function(msg)
     Tablet("The Version Is: "..Version.."!")
 end)
 
-NewCMD("Music", "ms", "Search A Music", function(msg)
-    Tablet("The Version Is: "..Version.."!")
+NewCMD("GetChildren", "wgc", "Get Children workspace!", function(msg)
+    Tablet(game.workspace:GetChildren())
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
@@ -6513,7 +6513,6 @@ game.Players.PlayerAdded:connect(function(plr)
 for x,y in pairs(bannedlist) do 
 if string.find(string.lower(plr.Name),string.lower(y)) then 
 runtoname = prl.Name
-
 prl:remove() 
 Tablet(runtoname.." Has Been Banned! ", Colors.Orange)
 runtoname = "ERROR, tell runtoheven..."
