@@ -1,7 +1,6 @@
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
-local part = "Succes Part made!"
 local Version = "V4.1.6"
 local clog = "Fixed Bugs, Added Cmds"
 local Player = game.Players.LocalPlayer or game.Players.coresb
@@ -6426,7 +6425,7 @@ end)
 
 NewCMD("Paste a brick", "brick", "Make a brick", function(msg)
     local brick = Instance.new("Part", workspace)
-    Tablet(print("..part.."))
+    Tablet(Part Added)
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
