@@ -6476,6 +6476,11 @@ m:Destroy()
 end)
 end
 
+NewCMD("Afk", "Afk", "Tell Afk a Player",
+function(msg)
+tablet("AFK!")
+tablet("AFK!")
+end)
 
 Dismiss()
 if developer == "Developer In Training" then
