@@ -6481,6 +6481,7 @@ function(msg)
 tablet("AFK!")
 tablet("AFK!")
 tablet("AFK!")
+tablet("AFK!")
 end)
 
 Dismiss()
