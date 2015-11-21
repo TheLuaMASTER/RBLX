@@ -2,6 +2,7 @@ local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
 local Version = "V4.1.6"
+local web = "CoreSB.fourms.com"
 local clog = "Fixed Bugs, Added Cmds"
 local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
