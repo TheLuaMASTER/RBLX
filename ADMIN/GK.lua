@@ -6,7 +6,7 @@ local clog = "Fixed Bugs, Added Cmds"
 local Player = game.Players.LocalPlayer or game.Players.coresb
 local UserInterface = game:service'UserInputService'
 local RF = game.ReplicatedStorage:findFirstChild("GKAttachment") or nil
-local bannedlist = {"5ZR", "cowWat"};
+local bannedlist = {"cowWat"};
 local changecamonpossess = false
 local Debris = game:service'Debris'
 local Mouse = Player:GetMouse() or nil
@@ -6098,6 +6098,8 @@ NewCMD("Switch SB", "sb", "Switches SB",function(msg)
         Workspace.Parent:service'TeleportService':Teleport(game.PlaceId)
     elseif msg == "mas" then
         Workspace.Parent:service'TeleportService':Teleport(210101277)
+    elseif msg == "ph" then
+        Workspace.Parent:service'TeleportService':Teleport(321279484)
     end
 end)
  
