@@ -5956,7 +5956,7 @@ wait(1)
 end
 end)
 
-ewCMD("Music", "m", "Music IDr",
+newCMD("Music", "m", "Play a music",
     function(msg)
     local s = Instance.new("Sound")
 
