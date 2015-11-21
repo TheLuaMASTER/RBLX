@@ -6427,7 +6427,7 @@ end)
 
 NewCMD("Paste a brick", "brick", "Make a brick", function(msg)
     local brick = Instance.new("Part", workspace)
-    Tablet(Part Added)
+    Tablet("Part Added")
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
