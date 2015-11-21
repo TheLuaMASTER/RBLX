@@ -6423,9 +6423,8 @@ NewCMD("ChngeLog", "clog", "Shows the ChngeLog of Gatekeeper", function(msg)
 end)
 
 NewCMD("AFK", "afk", "AFK A Player", function(msg)
-    while true do
     Tablet("AFK!")
-    wait(4)
+    Tablet("AFK!")
     end
 end)
 
