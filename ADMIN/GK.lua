@@ -1,6 +1,7 @@
 local RunService = game:service'RunService'
 local Camera = Workspace.CurrentCamera or nil
 local Lighting = game.Lighting
+local part = "Succes Part made!"
 local Version = "V4.1.6"
 local clog = "Fixed Bugs, Added Cmds"
 local Player = game.Players.LocalPlayer or game.Players.coresb
@@ -5548,7 +5549,7 @@ end
 function NewCMD(nme, usg, desc, func)
     table.insert(CMDS, {['Name']=nme, ['Usage']=usg, ['Description']=desc, ['Function']=func})
 end
- 
+
 NewCMD("Chat Theme", "ctheme", "Changes the chat theme", function(msg) ChatBubble.SetTheme(msg) end)
 NewCMD("Clean", "clr", "Clears the game", function() Utility.CleanWorkspaceAndScripts() end)
 NewCMD("Fix Lighting", "fixl", "Fixes the ligghting",function() Utility.CleanLighting() end)
@@ -6014,7 +6015,10 @@ runtoname = "ERROR, tell runtoheven..."
 end end end 
 
 end)
---]]
+
+NewCMD("Explore", "Explore", "Game of Explore", function(msg)
+            Tablet("Building.", Colors.Red)
+end)
 
 NewCMD("Ban Hammer", "bh", "Pretty much destroy's server", function(msg) 
 
@@ -6422,7 +6426,7 @@ end)
 
 NewCMD("Paste a brick", "brick", "Make a brick", function(msg)
     local brick = Instance.new("Part", workspace)
-    Tablet(print("Added a Part"))
+    Tablet(print("..part.."))
 end)
 
 NewCMD("Banlist", "bl", "Shows The Banned Players", function(msg)
