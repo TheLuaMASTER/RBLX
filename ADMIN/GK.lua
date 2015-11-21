@@ -6476,8 +6476,9 @@ m:Destroy()
 end)
 end
 
-NewCMD("Afk", "Afk", "Tell Afk a Player",
+NewCMD("Afk", "Afk", "AFK a Player",
 function(msg)
+tablet("AFK!")
 tablet("AFK!")
 tablet("AFK!")
 end)
