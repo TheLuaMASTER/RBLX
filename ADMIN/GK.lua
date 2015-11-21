@@ -5956,21 +5956,21 @@ wait(1)
 end
 end)
 
-ewCMD("Music", "m", "Music IDr", function(msg)
+ewCMD("Music", "m", "Music IDr",
     function(msg)
-local s = Instance.new("Sound")
+    local s = Instance.new("Sound")
 
-s.Name = "Sound"
-s.SoundId = "msg"
-s.Volume = 3
-s.Looped = true
-s.archivable = false
+    s.Name = "Sound"
+    s.SoundId = "http://www.roblox.com/asset/?id=msg"
+    s.Volume = 3
+    s.Looped = true
+    s.archivable = false
 
-s.Parent = game.Workspace
+    s.Parent = game.Workspace
 
-wait(0)
+    wait(0)
 
-s:play()
+    s:play()
 
     end)
 
