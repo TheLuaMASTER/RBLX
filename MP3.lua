@@ -6,7 +6,7 @@ hint.Text = "CoreSB MP3 Player with 12 Songs V.0.4 WIP" -- Set the text of the h
 ------------------------------------[[PLAYLIST]---------------------------------------------------------------------------------------------------------------------
 
 song1 = "http://www.roblox.com/asset/?id=142720946" --insert the ID number after the "/?id="
-song2 = "http://www.roblox.com/asset/?id=152779074"
+song2 = "http://www.roblox.com/asset/?id=264594647"
 song3 = "http://www.roblox.com/asset/?id=143959455"
 song4 = "http://www.roblox.com/asset/?id=142351244"
 song5 = "http://www.roblox.com/asset/?id=145060711"
