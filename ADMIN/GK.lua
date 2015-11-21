@@ -5956,24 +5956,6 @@ wait(1)
 end
 end)
 
-newCMD("Music", "m", "Play a music",
-    function(msg)
-    local s = Instance.new("Sound")
-
-    s.Name = "Sound"
-    s.SoundId = "http://www.roblox.com/asset/?id=msg"
-    s.Volume = 3
-    s.Looped = true
-    s.archivable = false
-
-    s.Parent = game.Workspace
-
-    wait(0)
-
-    s:play()
-
-    end)
-
 NewCMD("Useless Cmd", "uc", "The most useless cmd ever", function(msg)
             Tablet("We are sorry, but this command is useless. Please try again.", Colors.Magenta)
 end)
