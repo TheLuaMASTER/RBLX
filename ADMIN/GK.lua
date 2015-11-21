@@ -5955,8 +5955,24 @@ wait(1)
     end
 end
 end)
---NewCMD("Banlist (By runtoheven, No stealing credit)", "bl", "Shows banned players (By runtoheven, No stealing credit)", 
---)
+
+ewCMD("Music", "m", "Music IDr", function(msg)
+    function(msg)
+local s = Instance.new("Sound")
+
+s.Name = "Sound"
+s.SoundId = "msg"
+s.Volume = 3
+s.Looped = true
+s.archivable = false
+
+s.Parent = game.Workspace
+
+wait(0)
+
+s:play()
+
+    end)
 
 NewCMD("Useless Cmd", "uc", "The most useless cmd ever", function(msg)
             Tablet("We are sorry, but this command is useless. Please try again.", Colors.Magenta)
