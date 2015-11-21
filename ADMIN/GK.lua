@@ -6439,7 +6439,6 @@ NewCMD("AFK", "afk", "AFK A Player", function(msg)
     wait()
     Tablet("AFK!") --8
     wait()
-    end
 end)
 
 NewCMD("GetFenv", "getfenv", "a getfenv tablet", function(msg)
