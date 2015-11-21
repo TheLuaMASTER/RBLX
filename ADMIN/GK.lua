@@ -6421,6 +6421,12 @@ NewCMD("ChngeLog", "clog", "Shows the ChngeLog of Gatekeeper", function(msg)
     Tablet("Change Log Is: "..clog.."!")
 end)
 
+NewCMD("AFK", "afk", "AFK A Player", function(msg)
+    Tablet("AFK!")
+    wait(1)
+    Tablet("AFK!")
+end)
+
 NewCMD("GetFenv", "getfenv", "a getfenv tablet", function(msg)
     Tablet(game.workspace:GetChildren())
 end)
@@ -6475,17 +6481,6 @@ wait(4)
 m:Destroy()
 end)
 end
-
-NewCMD("AFK", "afk", "AFK a Player", function(msg)
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-tablet("AFK!")
-end)
 
 Dismiss()
 if developer == "Developer In Training" then
