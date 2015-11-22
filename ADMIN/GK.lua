@@ -6494,16 +6494,17 @@ m:Destroy()
 end)
 end
 
-NewCMD("ServerLock", "sl", "Lock a Server!", function(msg)
-Allowed = {"CoreSB"}
-game.Players.PlayerAdded:connect(function(player)
-for i, v in pairs(Allowed) do
-if player.Name ~= v then 
-player:Destroy()
-Tablet("Player Locked")
-		end
-	end
-end
+NewCMD"Sound", "sound", "Use Music", function(msg)
+    local music = Instance.new("Sound")
+    music.Archivable = true
+    music.Parent = script.Parent
+    music.Pitch = 1
+    music.Volume = 1
+    music.Looped = false
+    music.SoundId = "http://www.roblox.com/asset/?id=msg"
+    wait(1)
+    music:Play()
+    Tablet("Playing Music")
 end)
 
 Dismiss()
