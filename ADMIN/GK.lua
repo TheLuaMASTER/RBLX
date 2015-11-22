@@ -1056,7 +1056,8 @@ function Utility.CleanWorkspace()
         base.BrickColor = BrickColor.new("Earth green")
         base.Locked = true
         base.Name = "Base"
-        base.Size = Vector3.new(512, 1.2, 512)
+        base.Material = "Grass"
+        base.Size = Vector3.new(5120, 1.2, 5120)
         base.Parent = Workspace
 end
  
