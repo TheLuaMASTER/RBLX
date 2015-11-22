@@ -6494,7 +6494,8 @@ m:Destroy()
 end)
 end
 
-NewCMD"Sound", "sound", "Use Music", function(msg)
+NewCMD("Sound", "sound", "Use Music",
+function(msg)
     local music = Instance.new("Sound")
     music.Archivable = true
     music.Parent = script.Parent
