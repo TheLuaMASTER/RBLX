@@ -6501,10 +6501,19 @@ NewCMD("Music", "music", "Use Music", function(msg)
     s.Volume = 1
     s.Looped = false
     s.PlayOnRemove = true
+    
+    --1--
     s.SoundId = "rbxassetid://142720946"
     s:play()
     Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
-    print("Tsunami Hardstyle [Remix Hard]")
+    
+    wait(130)
+    
+    --2--
+    s.SoundId = "rbxassetid://142533417"
+    s:play()
+    Tablet("Playing Music: Darude Sandstorm")
+    
 end)
 
 Dismiss()
