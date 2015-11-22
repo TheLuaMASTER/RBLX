@@ -6502,7 +6502,8 @@ function(msg)
     music.Pitch = 1
     music.Volume = 1
     music.Looped = false
-    music.SoundId = "http://www.roblox.com/asset/?id=msg"
+    local id = http://www.roblox.com/asset/?id=msg
+    music.SoundId = id
     wait(1)
     music:Play()
     Tablet("Playing Music")
