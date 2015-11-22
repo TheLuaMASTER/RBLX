@@ -6502,12 +6502,10 @@ NewCMD("Music", "music", "Use Music", function(msg)
     music.Pitch = 1
     music.Volume = 1
     music.Looped = false
-    wait(1)
     
-    music.SoundId = "rbxassetid//142720946"
+    music.SoundId = "rbxassetid://142720946"
     music:play()
     Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
-    wait(130) 
 end)
 
 Dismiss()
