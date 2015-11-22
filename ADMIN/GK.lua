@@ -6494,10 +6494,7 @@ m:Destroy()
 end)
 end
 
-NewCMD("Sound", "sound", "Use Music",
-function(msg)
-    
-    song1 = "http://www.roblox.com/asset/?id=142720946"
+NewCMD("Music", "music", "Use Music", function(msg)
     
     local music = Instance.new("Sound")
     music.Archivable = true
@@ -6507,10 +6504,10 @@ function(msg)
     music.Looped = false
     wait(1)
     
-music.SoundId = song1 
-music:play()
-Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
-wait(130) 
+    music.SoundId = "rbxassetid//142720946"
+    music:play()
+    Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
+    wait(130) 
 end)
 
 Dismiss()
