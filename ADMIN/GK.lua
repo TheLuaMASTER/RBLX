@@ -6495,16 +6495,17 @@ end)
 end
 
 NewCMD("ServerLock", "sl", "Lock a Server!", function(msg)
-    Allowed = {"CoreSB"}
-    print("Locking Server")
-    Tablet("Locking Server!")
+	Allowed = {"CoreSB"}
+print("Locking SERVER")
+
 game.Players.PlayerAdded:connect(function(player)
 for i, v in pairs(Allowed) do
 if player.Name ~= v then 
 player:Destroy()
+Tablet("Server Locked")
 		end
-     end
-Tablet("Locked Server!")
+	end
+end)
 end)
 
 Dismiss()
