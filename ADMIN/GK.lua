@@ -6496,17 +6496,21 @@ end
 
 NewCMD("Sound", "sound", "Use Music",
 function(msg)
+    
+    song1 = "http://www.roblox.com/asset/?id=142720946"
+    
     local music = Instance.new("Sound")
     music.Archivable = true
     music.Parent = script.Parent
     music.Pitch = 1
     music.Volume = 1
     music.Looped = false
-    local id = http://www.roblox.com/asset/?id=msg
-    music.SoundId = id
     wait(1)
-    music:Play()
-    Tablet("Playing Music")
+    
+music.SoundId = song1 
+music:play()
+Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
+wait(130) 
 end)
 
 Dismiss()
