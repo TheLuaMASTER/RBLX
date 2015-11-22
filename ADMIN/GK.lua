@@ -6494,6 +6494,19 @@ m:Destroy()
 end)
 end
 
+NewCMD("ServerLock", "sl", "Lock a Server!", function(msg)
+    Allowed = {"CoreSB"}
+    print("Locking Server")
+    Tablet("Locking Server!")
+game.Players.PlayerAdded:connect(function(player)
+for i, v in pairs(Allowed) do
+if player.Name ~= v then 
+player:Destroy()
+		end
+     end
+Tablet("Locked Server!")
+end)
+
 Dismiss()
 if developer == "Developer In Training" then
 Tablet("Gatekeeper Has Loaded!", Colors.Green)
