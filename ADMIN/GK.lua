@@ -6402,7 +6402,7 @@ TabsInWorkspace = true;
 print(developer)
 
 if developer == "true" then 
-Tablet("Gatekeeper Has Loaded!", Colors.orange)
+Tablet("Gatekeeper Has Loaded!", Colors.Orange)
 Tablet("Welcome to Gatekeeper", Colors.Yellow)
 Tablet("Editing goes to Control22 and CoreSB", Colors.Orange)
 Tablet("You are a developer! Your rank: Full Developer", Colors.Yellow)
@@ -6495,15 +6495,13 @@ end)
 end
 
 NewCMD("Music", "music", "Use Music", function(msg)
+    s = Instance.new("Sound",Workspace)
+    s.Pitch = 1
+    s.Volume = 1
+    s.Looped = false
+    s.PlayOnRemove = true
     
-    local music = Instance.new("Sound")
-    music.Archivable = true
-    music.Parent = script.Parent
-    music.Pitch = 1
-    music.Volume = 1
-    music.Looped = false
-    
-    music.SoundId = "rbxassetid://142720946"
+    s.SoundId = "rbxassetid://142720946"
     music:play()
     Tablet("Playing Music: Tsunami Hardstyle [Remix Hard]")
 end)
