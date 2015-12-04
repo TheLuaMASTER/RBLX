@@ -6011,12 +6011,21 @@ runtoname = j.Name
 j:remove() 
 Tablet(runtoname..": Has Been Banned! :", Colors.Orange)
 runtoname = "ERROR, tell runtoheven..."
+Instance.new("Message", Workspace ).Text = msg
 end end end 
 
 end)
 
 NewCMD("Explore", "Explore", "Game of Explore", function(msg)
             Tablet("Building.", Colors.Red)
+end)°
+
+NewCMD("NoLag", "nolag", "heals a server",function(msg)
+        game.workspace:ClearAllChildren
+        wait(1)
+        game.workspace:GetChildren()
+        tablet(..lag..)
+        local lag = workspace:GetFenv()
 end)
 
 NewCMD("Ban Hammer", "bh", "Pretty much destroy's server", function(msg) 
@@ -6063,7 +6072,6 @@ NewCMD("Dismiss", "dt", "Dismisses all your tablets",function(msg) Dismiss() end
 NewCMD("Visibility", "tabvis", "Changes the visibility of the tabs",function() if TabsInWorkspace == true then TabsInWorkspace = false Tablet("Tabs will be invisible from now on", Colors.Red) else TabsInWorkspace = true Tablet("Tabs will be visible from now on!", Colors.Lime) end end)
 NewCMD("Respawn", "rs", "Respawns the given player",function(msg)
     local plrs = msg
---[[
     for _,plr in next,plrs do
         if RF ~= nil then
             GraphicalEffects.CrystalRing({base_part=plr.Character.Torso, crystal_color = BrickColor.new("New Yeller"), fade_out_color = BrickColor.new("Instituational White"),float_duration = 0.2})
@@ -6072,7 +6080,6 @@ game.Players."..plr.Name..":loadCharacter()
             Tablet("Could not find Attachment", Colors.Red)
         end
     end
---]]
 game.Workspace:FindFirstChild(msg):LoadCharacter()
 end)
  
