@@ -6547,6 +6547,8 @@ Mouse.Button1Down:connect(CheckHotKey)
 ChatBubble.Create("Welcome to Gatekeeper ver. "..Version,"Rainbow")
 wait(2)
 ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and CoreSB","Rainbow")
+wait(2)
+ChatBubble.Create("ChnageLog: Fixed Music Bugs","Rainbow")
 
 
 while true do
