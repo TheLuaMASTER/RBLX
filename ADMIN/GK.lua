@@ -6010,7 +6010,7 @@ if string.find(string.lower(j.Name),string.lower(y)) then
 runtoname = j.Name
 j:remove() 
 Tablet(runtoname..": Has Been Banned! :", Colors.Orange)
-Instance.new("Message", Workspace ).Text = msg
+
 runtoname = "ERROR, tell runtoheven..."
 end end end 
 
