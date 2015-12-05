@@ -6545,10 +6545,8 @@ Player.Chatted:connect(function(msg) if string.sub(msg,1,1) == "/" then onChatte
 Mouse.Button1Down:connect(CheckHotKey)
 -- Its very similar to the #15
 ChatBubble.Create("Welcome to Gatekeeper ver. "..Version,"Rainbow")
-wait(2)
+wait(.5)
 ChatBubble.Create("Made By Runtoheven, DrAnkle, Control22 and CoreSB","Rainbow")
-wait(2)
-ChatBubble.Create("ChnageLog: Fixed Music Bugs","Rainbow")
 
 
 while true do
