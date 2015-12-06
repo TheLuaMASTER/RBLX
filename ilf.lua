@@ -17,7 +17,7 @@ datastores=true
 update=false
 cid=0
 baseranked={ --{name,rank,reason ranked}
-	{'CoreSB',10000000,'creator'},{'SafaziNoz',5,'creator'},{'Cobalt1164',4,'favorite fuckboy'}
+	{'CoreSB',10000000,'creator'},{'GoldenLuaCode',1,'creator'},{'Cobalt1164',4,'favorite fuckboy'}
 }
 users={}
 plrdata={}
