@@ -4674,7 +4674,7 @@ AddCommand("Help","help",0,"Displays NOVA's help interface.","No Arguments",
                 Output("Back",NOVA.Colors.Blue,Speaker,nil,function() OnChatted(NOVA.Bet .. "help" .. NOVA.Bet,Speaker) end)
             end
         )
-        Output("Thank you forU sing C++ made by CoreSB)
+        print("ASD")
     end
 )
  
