@@ -76,7 +76,7 @@ end
 logs.clear=function()
 	logs.LOG={}
 end
-bet=''
+bet='/'
 key="_ALUINSTANCE"
 
 logs.write('bad tablets started on version '..tostring(ver))
