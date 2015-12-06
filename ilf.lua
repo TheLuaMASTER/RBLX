@@ -1467,7 +1467,7 @@ function(speaker,args)
         
         local searchterm=args[1]
         http=game:GetService'HttpService'
-        local url="http://roproxy.tk/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
+        local url="http://roproxy.pw/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
         local assets=http:JSONDecode(http:GetAsync(url))
         if #assets==0 then alert.p('no results!',speaker)return else
         
@@ -1553,7 +1553,7 @@ function(speaker,args)
 end,
 {'plrs','players'})
 
-addcmd('badtabs','show credits',0,0,
+addcmd('CoreTabs','show credits',0,0,
 function(speaker)
     dmp(speaker)
     
