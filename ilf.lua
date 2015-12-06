@@ -22,7 +22,7 @@ baseranked={ --{name,rank,reason ranked}
 users={}
 plrdata={}
 me="https://www.dropbox.com/s/a788yu696s1692s/newtabs.lua?raw=1"
-banlist={'testingsim','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
+banlist={'noob','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
 music={}
 rank={
     'friend','trusted','mod','admin','developer'
