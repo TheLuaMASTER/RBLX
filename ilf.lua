@@ -79,7 +79,7 @@ end
 bet='/'
 key="_ALUINSTANCE"
 
-logs.write('bad tablets started on version '..tostring(ver))
+logs.write('Core tablets started on version '..tostring(ver))
 
 plrs=game:service'Players'
 
@@ -2023,7 +2023,7 @@ plrs.PlayerAdded:connect(function(plr)
 	
 	
     delay(.5,function()
-    alert.c('bad tablets v'..ver..' running','New Yeller',plr,4)
+    alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
     _tab('say cmds\' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
     alert.g((plr.Name..' connected'),4)
@@ -2055,7 +2055,7 @@ startuptime=elapsedTime()
 for i,plr in pairs(plrs:GetPlayers())do
     
     if tonumber(getrank(plr))>=5 then
-	alert.c('bad tablets v'..ver..' running','New Yeller',plr,4)
+	alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('took '..tostring(startuptime/1000)..' seconds to start','Lime green',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
     _tab('say cmds\' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
@@ -2260,7 +2260,7 @@ loadmodule=function(link)
     if not run then print(error) end
 end
 repeat wait()until not enabled
-print'bad tabs disabled'
+print'Core tabs disabled'
 
 
 delay(0,function()
