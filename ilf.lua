@@ -1560,7 +1560,7 @@ function(speaker)
     print('Core',tostring(ver))
 	alert.c('Core tablets v'..ver,'New Yeller',speaker)
 	alert.c('your rank: '..getrank(speaker),'New Yeller',speaker)
-    _tab('say /cmds' to get your commands','New Yeller',speaker,function()dmp(speaker)chat("cmds",speaker)end,'')
+    _tab('say /cmd to get your commands','New Yeller',speaker,function()dmp(speaker)chat("cmds",speaker)end,'')
 	alert.c('made by CoreSB','New Yeller',speaker)
 end,
 {'cred'})
@@ -2025,7 +2025,7 @@ plrs.PlayerAdded:connect(function(plr)
     delay(.5,function()
     alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
-    _tab('say /cmds' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
+    _tab('say /cmds to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
     alert.g((plr.Name..' connected'),4)
     end)end)
 	
@@ -2058,7 +2058,7 @@ for i,plr in pairs(plrs:GetPlayers())do
 	alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('took '..tostring(startuptime/1000)..' seconds to start','Lime green',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
-    _tab('say /cmds' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
+    _tab('say /cmds to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
     end
     if getrank(plr)==-1 or inTable(banlist,plr.Name)then Kick(plr) end
 end
