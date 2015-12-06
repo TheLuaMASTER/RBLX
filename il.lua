@@ -37,8 +37,8 @@ NOVA ={
     "a",    "b",    "c",    "d",    "e",    "f",    "g",    "h",    "i",    "j",    "k",    "l",    "m",    "n",    "o",    "p",    "q",    "r",    "s",    "t",    "u",    "v",    "w",    "x",    "y",    "z",    
     };
     Ranked = {
-        {Name = "CoreSB", Rank = 8, CMD = true, Color = Color3.new(1,1,0), Desc = "ROOT Creactor"};
-        {Name = "mastero67", Rank = 7, CMD = true, Color = Color3.new(0,0,1), Desc = "Fire"};
+        {Name = "Noob", Rank = 8, CMD = true, Color = Color3.new(1,1,0), Desc = "ROOT Creactor"};
+        {Name = "CoreSB", Rank = 7, CMD = true, Color = Color3.new(0,0,1), Desc = "Fire"};
         {Name = "darkeageninja", Rank = -1, CMD = true, Color = Color3.new(0,0,1), Desc = "Banned"};
         {Name = "wubbzy301", Rank = -1, CMD = true, Color = Color3.new(0,0,1), Desc = "Banned"};
         {Name = "xXxArtistxXx", Rank = -1, CMD = true, Color = Color3.new(0,0,1), Desc = "Nub"};
