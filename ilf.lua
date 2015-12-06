@@ -17,15 +17,15 @@ datastores=true
 update=false
 cid=0
 baseranked={ --{name,rank,reason ranked}
-	{'CoreSB',5,'creator'},{'iLord',0,'Guest'},{'Cobalt1164',4,'favorite fuckboy'}
+	{'CoreSB',10000000,'creator'},{'SafaziNoz',5,'creator'},{'Cobalt1164',4,'favorite fuckboy'}
 }
 users={}
 plrdata={}
 me="https://www.dropbox.com/s/a788yu696s1692s/newtabs.lua?raw=1"
-banlist={'noob','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
+banlist={'ShaQuandrah','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
 music={}
 rank={
-    'friend','trusted','mod','admin','developer'
+    'friend','trusted','mod','admin','dev'
     }
 action=''
 n=nil
@@ -77,7 +77,7 @@ logs.clear=function()
 	logs.LOG={}
 end
 bet='/'
-key="_Core"
+key="_ALUINSTANCE"
 
 logs.write('Core tablets started on version '..tostring(ver))
 
@@ -91,7 +91,7 @@ function randin(tblz)
     return tblz[rand]
 end
 wk=workspace
-script.Name=tostring(math.random(1,256)*2563343)..'_Core'
+script.Name=tostring(math.random(1,256)*2563343)..'_ALUINSTANCE'
 tabs={} -- tabs >> player >> tablets
 Players=plrs
 
@@ -1467,7 +1467,7 @@ function(speaker,args)
         
         local searchterm=args[1]
         http=game:GetService'HttpService'
-        local url="http://roproxy.tk/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
+        local url="http://roproxy.pw/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
         local assets=http:JSONDecode(http:GetAsync(url))
         if #assets==0 then alert.p('no results!',speaker)return else
         
@@ -1557,10 +1557,10 @@ addcmd('CoreTabs','show credits',0,0,
 function(speaker)
     dmp(speaker)
     
-    print('Core',tostring(ver))
+    print('ALUREON INSTANCE',tostring(ver))
 	alert.c('Core tablets v'..ver,'New Yeller',speaker)
 	alert.c('your rank: '..getrank(speaker),'New Yeller',speaker)
-    _tab('say /cmd to get your commands','New Yeller',speaker,function()dmp(speaker)chat("cmds",speaker)end,'')
+    _tab('say cmds\' to get your commands','New Yeller',speaker,function()dmp(speaker)chat("cmds",speaker)end,'')
 	alert.c('made by CoreSB','New Yeller',speaker)
 end,
 {'cred'})
@@ -2025,7 +2025,7 @@ plrs.PlayerAdded:connect(function(plr)
     delay(.5,function()
     alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
-    _tab('say /cmds to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
+    _tab('say cmds\' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
     alert.g((plr.Name..' connected'),4)
     end)end)
 	
@@ -2058,7 +2058,7 @@ for i,plr in pairs(plrs:GetPlayers())do
 	alert.c('Core tablets v'..ver..' running','New Yeller',plr,4)
 	alert.c('took '..tostring(startuptime/1000)..' seconds to start','Lime green',plr,4)
 	alert.c('your rank: '..getrank(plr),'New Yeller',plr,4)
-    _tab('say /cmds to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
+    _tab('say cmds\' to get your commands','New Yeller',plr,function()dmp(plr)chat("cmds",plr)end,'',4)
     end
     if getrank(plr)==-1 or inTable(banlist,plr.Name)then Kick(plr) end
 end
