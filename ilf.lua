@@ -17,12 +17,12 @@ datastores=true
 update=false
 cid=0
 baseranked={ --{name,rank,reason ranked}
-	{'CoreSB',5,'creator'},{'SafaziNoz',5,'creator'},{'Cobalt1164',4,'favorite fuckboy'}
+	{'CoreSB',5,'creator'},{'iLord',0,'Guest'},{'Cobalt1164',4,'favorite fuckboy'}
 }
 users={}
 plrdata={}
 me="https://www.dropbox.com/s/a788yu696s1692s/newtabs.lua?raw=1"
-banlist={'ShaQuandrah','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
+banlist={'noob','jairyanofficial','xxcoolboy8','lolman8776','clarence258','iiUnsolved','iamEdward6789','canaideanpolerbear','64S','CHAOSxFIGHTER','Kufarscum','meunumbertwo','1337h4xorz','narutokid12','TygaAndKylie','dyler3','minecraftrath101','imnotmax','fmerSKID005','imthemandamnit666'}
 music={}
 rank={
     'friend','trusted','mod','admin','developer'
@@ -1467,7 +1467,7 @@ function(speaker,args)
         
         local searchterm=args[1]
         http=game:GetService'HttpService'
-        local url="http://roproxy.pw/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
+        local url="http://roproxy.tk/catalog/json?Keyword="..http:UrlEncode(searchterm).."&Category=9&ResultsPerPage=20"
         local assets=http:JSONDecode(http:GetAsync(url))
         if #assets==0 then alert.p('no results!',speaker)return else
         
